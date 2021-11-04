@@ -46,7 +46,7 @@ function checkFile(): bool
 
 function checkRowsAmount(): bool
 {
-    return count(file($_FILES['file']['tmp_name'])) > 9;
+    return count(file($_FILES['file']['tmp_name'])) > 100000;
 }
 
 function checkNameForWrongSymbols(object $guide): bool
